@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MWS 2018 - Dian Anindita</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+
+    <style>
+        .container {
+            display: grid;
+            font-family: 'Nunito', sans-serif;
+            height: 100%;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 80px 50px auto 80px;
+        }
+
+        .menu {
+            background: #ff6699;
+            grid-column: 1/-1;
+        }
+
+        a:hover {
+            color: #e47272;
+        }
+
+        a:active {
+            color: #ffffff;
+        }
+
+        a:link {
+            color: #ff9999;
+            text-decoration: none;
+        }
+
+        .header {
+            background: #ff99bb;
+            grid-column: 1/-1;
+            color: #cd4c77;
+
+        }
+
+        .sidebar {
+            background: #94E0EE;
+            grid-column: 1/2;
+            background-image: url("images/me.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .konten {
+            background: #f98c8c;
+            grid-column: 2/-1;
+            display: grid;
+            grid-gap: 4px;
+        }
+
+        .subkonten {
+            background: #cd4c77;
+            grid-column: 1/-1;
+            text-align: center;
+        }
+
+        .footer {
+            background: #f33a77;
+            ;
+            grid-column: 1/-1;
+            text-align: center;
+        }
+
+        img.center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 12px;
+        }
+
+        img.center2 {
+            display: block;
+            margin-left: 150px;
+            margin-top: 3px;
+        }
+
+        p {
+            color: #ffffff;
+
+        }
+
+        a.center {
+            display: block;
+            margin-top: 40px;
+        }
+
+        h3 {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <img class="center" src="images/bouquet.png" alt="Flowers" height="55px" /></div>
+        <div class="header">
+            <h3>Universitas Pembangunan Nasional "Veteran" Jakarta</h3>
+        </div>
+        <div class="sidebar"></div>
+        <div class="konten">
+            <div class="subkonten">
+                <h2><a class="center" href='hitung-angka.html'>Menghitung 2 Angka</a></h2>
+            </div>
+            <div class="subkonten">
+                <h2><a class="center" href="maps.html">Peta Kuliner</a></h2>
+            </div>
+            <div class="subkonten">
+                <h2><a class="center" href="maps-fetch.html">Peta Kuliner [Fetch]</a></h2>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Hello! My name is Dian Anindita.<br>I am a third year undergraduate student in UPN "Veteran" Jakarta,
+                majoring in Information System.</p>
+        </div>
+
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            // SW ada
+            // TODO: Lab 1
+            navigator.serviceWorker.register('sw.js')
+                .then(() => console.log('Service Worker registered'))
+                .catch((error) => console.log("Registration failed:",error));
+}
+    </script>
+
+</body>
+
+</html>

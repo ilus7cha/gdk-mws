@@ -1,0 +1,16 @@
+{
+    "name": "GDK MWS 2018 - Dian Anindita",
+    "short_name": "MWS Dita",
+    "icons": [
+        {
+            "src": "images/icon-mws.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "./",
+    "background_color": "#cd4c77",
+    "display": "standalone",
+    "theme_color": "#f98c8c"
+
+}

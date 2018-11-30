@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Menghitung 2 Angka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+   
+    .container {
+        display: grid;
+        font-family: 'Nunito', sans-serif;       
+        height: 100%;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 79px 455px 79px;
+    }
+    .menu{
+        background: #ff99bb;
+        color: #000000;
+        grid-column: 1/-1;
+    }
+    .operand1 {
+        background: #cd4c77;        
+        grid-column: 1/2;
+        
+    }
+    .operator{
+        background:#cd4c77;
+        grid-column: 2/3;        
+        text-align: center;
+    }
+    .operand2 {
+        grid-column: 3/4;
+        background: #cd4c77;
+}
+.tombol{
+    grid-column: 4/5;
+    background:#cd4c77;          
+}
+.hasil {
+    grid-column: 5/-1;
+    background: #cd4c77;            
+}
+    .footer{
+        background: #ff99bb;
+        grid-column: 1/-1;
+        text-align: center;
+    }
+    .input1{
+        border-radius: 5px;
+        margin-top: 150px;
+        margin-left: 100px;
+        height: 50px;
+        text-align: center;
+        font-size: 15pt;
+        color: #ffffff;
+        background-color: #cd4c77;
+        border: #ffffff 3px solid;
+        font-family: 'Nunito', sans-serif;
+    }
+    .input2{
+        border-radius: 5px;
+        margin-top: 150px;
+        height: 50px;
+        text-align: center;
+        font-size: 15pt;
+        color: #ffffff;
+        background-color: #cd4c77;
+        border: #ffffff 3px solid;
+        font-family: 'Nunito', sans-serif;
+    }
+    .result{
+        border-radius: 5px;
+        height: 50px;
+        margin-top: 150px;
+        margin-right: 100px;
+        font-size: 15pt;
+        text-align: center;
+        color: #ffffff;
+        background-color: #cd4c77;
+        border: #ffffff 3px solid;
+        font-family: 'Nunito', sans-serif;       
+    }
+    ::-webkit-input-placeholder{
+        color: #ffffff;
+        text-align: center;
+        font-size: 20pt;
+    }
+    h2{
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        color: #cd4c77;
+    }
+    .button-flat {
+	border: 1px solid #cd4c77;
+    border-radius: 5px;
+	background-color: #ff99bb;        
+	color: #FFFFFF;                   
+	font-size: 25px;                  
+	padding: 0.5em 1em 0.5em 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    }
+    .button-flat:hover {
+	opacity: 0.8;                     
+    }
+    .button-flat:active {
+	background: #ff99bb;             
+    }
+    img{
+        align-content: center;
+        margin-top: 170px;   
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class='container'>
+        <div class="menu">
+            <h2>Penjumlahan 2 Angka</h2>
+        </div>
+        <div class='operand1'>
+            <input class="input1" id="valueX" type="number" placeholder="0" />
+        </div>
+        <div class='operator'>
+            <img src="images/add.png" alt="Add" height="20px" />
+        </div>
+        <div class='operand2'>
+            <input class="input2" id="valueY" type="number" placeholder="0" />
+        </div>
+        <div class='tombol'>
+            <button class="button-flat"> = </button>
+        </div>
+        <div class='hasil'>
+            <input class="result" id="result" type="text" readonly>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <script>
+        function kalkulator() {
+            let angka = document.querySelectorAll('input');
+            let i1 = parseInt(angka[0].value); //angka pertama
+            let i2 = parseInt(angka[1].value); //angka kedua
+            angka[2].value = i1 + i2;
+        }
+        let tombol = document.querySelector('button');
+        tombol.addEventListener('click', kalkulator);
+    </script>
+</body>
+
+</html>

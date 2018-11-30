@@ -1,0 +1,38 @@
+{
+    "places" : [
+    {
+    "lokasi": [-6.270276,106.739429],
+    "sponsor" : "Abuba Steak",
+    "gambar":"images/abuba_steak.jpg",
+    "review": "Steak terlezat!"
+    },
+    
+    {
+    "lokasi": [-6.272357,106.726143],
+    "sponsor" : "Shabu Hachi",
+    "gambar": "images/shabu_hachi.jpg",
+    "review": "All you can eat! Tapi harga tidak bersahabat:("
+    },
+
+    {
+    "lokasi": [-6.271847,106.727936],
+    "sponsor" : "Sop Durian Lodaya",
+    "gambar":"images/lodaya.jpg",
+    "review": "Dessert tersegar!"
+    },
+
+    {
+        "lokasi": [-6.272937,106.742126],
+        "sponsor" : "Panties Pizza",
+        "gambar":"images/cheese.jpg",
+        "review": "Pizza terenak, kejunya melted banget gaizz! Ena ena"
+        },
+
+    {
+    "lokasi": [-6.270456,106.730154],
+    "sponsor" : "ICON5 Coffee & Resto",
+    "gambar":"images/icon05.jpg",
+    "review": "Cafe tercozy buat nongki-nongki, coffee caramelnya bikin nagih!"
+    }
+    ]
+   }
